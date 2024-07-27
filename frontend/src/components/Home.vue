@@ -14,7 +14,7 @@
             <v-btn @click="searchClient" color="primary">Buscar</v-btn>
           </v-col>
           <v-col cols="12" md="4" class="d-flex justify-end">
-            <v-btn @click="openPersonForm" color="primary"
+            <v-btn @click="openForm" color="primary"
               >Cadastrar Cliente</v-btn
             >
           </v-col>
@@ -295,7 +295,7 @@ export default {
         });
     };
 
-    const openPersonForm = () => {
+    const openForm = () => {
       dialog.value = true;
     };
 
@@ -485,7 +485,7 @@ export default {
       addressHistory,
       errors,
       searchClient,
-      openPersonForm,
+      openForm,
       closeDialog,
       save,
       getTypeAddress,
