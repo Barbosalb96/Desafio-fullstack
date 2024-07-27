@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('bairro');
             $table->string('cidade');
             $table->string('estado');
-            $table->boolean('historico')->nullable();
             $table->foreignIdFor(Pessoa::class)->constrained('pessoas');
             $table->foreignIdFor(TipoEndereco::class)->constrained('tipo_enderecos');
             $table->timestamps();
